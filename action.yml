@@ -1,0 +1,9 @@
+name: "Github ZIPPER"
+description: "ZIP a folder or a file and push them into release."
+author: "Tai Studio"
+runs:
+  using: "docker"
+  image: "Dockerfile"
+branding:
+  icon: circle
+  color: black

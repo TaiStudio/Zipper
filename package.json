@@ -1,0 +1,30 @@
+{
+  "name": "zipper",
+  "version": "1.0.0",
+  "description": "Github action pour zipper des dossiers/fichiers",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TaiStudio/Zipper.git"
+  },
+  "keywords": [
+    "zip",
+    "github",
+    "action",
+    "tai",
+    "studio"
+  ],
+  "author": "Tai Tetsuyuki",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TaiStudio/Zipper/issues"
+  },
+  "homepage": "https://github.com/TaiStudio/Zipper#readme",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "zip-a-folder": "^1.1.3"
+  }
+}

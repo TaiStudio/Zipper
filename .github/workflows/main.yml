@@ -1,0 +1,25 @@
+name: Zip Folder or File
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  sending:
+    runs-on: ubuntu-latest
+    steps:
+    - name: ZIP
+      uses: TaiStudio/Zipper@master
+      env:
+        ZIPPER_IN: "./node_modules"
+        ZIPPER_OUT: "./node_modules"
+        ZIPPER_EXT: ".zip"
+    - uses: "marvinpinto/action-automatic-releases@latest"
+        with:
+          repo_token: "${{ secrets.GH_TOKEN }}"
+          automatic_release_tag: "latest"
+          prerelease: false
+          title: "Zipper Done"
+          files: |
+            *.zip
+            *.tar
