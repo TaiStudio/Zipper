@@ -1,8 +1,6 @@
 name: Zip Folder or File
 
-on:
-  release:
-    types: [published]
+on: workflow_dispatch
 
 jobs:
   sending:
